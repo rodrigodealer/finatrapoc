@@ -1,6 +1,6 @@
 name := "finatra-poc"
 
-version := "1.0"
+version := "1.2"
 
 scalaVersion := "2.10.3"
 
