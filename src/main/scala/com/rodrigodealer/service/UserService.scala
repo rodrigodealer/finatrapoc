@@ -12,7 +12,7 @@ object UserService  {
   def store(user: User) {
 
 
-    val result = Cypher("""
+    Cypher("""
           CREATE (berlin { name:'Berlin', type: 'City' })-[:IS_CITY_OF]->(germany { name:'Germany', type: 'Country' }),
           (paris { name:'Paris', type: 'City' })-[:IS_CITY_OF]->(France { name:'France',type: 'Country' }),
           (monaco { name:'Monaco', type: 'City' })-[:IS_CITY_OF]->(France { name:'France',type: 'Country' });
